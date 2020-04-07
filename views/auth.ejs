@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="container-fluid container-sign">
+        <div class="sign-in">
+            <form action="/users/login" method="post" class="sign-in__form aqua-gradient">
+                <div class="sign-in__block">
+                    <h1><i class="fas fa-user"></i></h1>
+                </div>
+
+                <%- include('partials/messages') %>
+
+                <div class="sign-in__block">
+                    <input  id="login"
+                            type="text"
+                            name="login"
+                            class="sign-in__input"
+                            placeholder="Enter Login">
+                </div>
+                <div class="sign-in__block">
+                    <input
+                            id="password"
+                            type="password"
+                            name="password"
+                            class="sign-in__input"
+                            placeholder="Enter Password">
+                </div>
+                <div class="sign-in__block">
+                    <button type="submit" name="submit" class="sign-in__btn-submit">Login</button>
+                </div>
+                <div class="sign-in__block">
+                    <a href="/" class="sign-in__btn-submit" style="text-decoration: none; ">Home</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>

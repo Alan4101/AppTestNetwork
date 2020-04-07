@@ -1,0 +1,54 @@
+<div class="container container-nav">
+    <div class="container-nav__wrapper-nav">
+        <button id="tabUser" class="container-nav__links">Users</button>
+        <button id="tabFriend" class="container-nav__links">Friends</button>
+    </div>
+    <div class="container-nav__user-info">
+        <p id="userIcon"><i class="fas fa-user"></i></p>
+        <p><%= user.name %></p>
+        <a href="/users/logout" class="btn container-nav__links">Logout</a>
+    </div>
+</div>
+<div class="container container-user">
+
+    <div id="userBlock" class="tabs-content" style="display: block;">
+        <div class="wrapper user-block">
+        <form class="form-inline d-flex justify-content-center md-form form-sm active-purple active-purple-2 mt-2">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input id="search" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+        </form>
+
+            <div class="user-block__list-user">
+                <ul class="friends-block__list usr-block-f pd-ul"></ul>
+                <hr>
+                <ul class="pending-reqests__out-list usr-block-o pd-ul"></ul>
+                <hr>
+                <ul class="user-block__list"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="friendsBlock" class="friends-block tabs-content">
+        <div class="wrapper friends-block">
+            <div class="friends-block__list-friends">
+                <div class="friends-block__list-block">
+                    <h2>Pending requests</h2>
+                    <div class="pending-reqests__incoming">
+                        <h3>Incoming</h3>
+                        <ul class="pending-reqests__in-list pd-rq_ind"></ul>
+                        <hr>
+                    </div>
+                    <div class="pending-reqests__outgoing">
+                        <h3>Outgoing</h3>
+                        <ul class="pending-reqests__out-list pd-rq_out"></ul>
+                        <hr>
+                    </div>
+
+                </div>
+                <div class="friends-block__list-block">
+                    <h2>Friends</h2>
+                    <ul class="friends-block__list frd-frd_list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
